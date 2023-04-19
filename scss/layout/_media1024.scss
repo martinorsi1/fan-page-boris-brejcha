@@ -1,0 +1,87 @@
+@media (min-width: 1024px) {
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        padding: 1.5rem;
+                        &:hover{
+                                background-color: rgba(128, 128, 128, 0.203);
+                                border-radius: 3rem;
+                                }
+                    }
+                };
+            }
+        }
+    }
+    .main-index {
+        section {
+            @include grid(repeat(2, 1fr), 15rem 1fr, none, none, center, center, none);
+
+            h1 {
+                @include grid-order(1, 3, 1, 2);
+            }
+
+            p {
+                width: 45rem;
+                font-size: 1.5rem;
+                @include grid-order(1, 2, 2, 3);
+            }
+
+            img {
+                width: 45rem;
+                @include grid-order(2, 3, 2, 3);
+            }
+
+            ;
+        }
+
+
+    }
+
+    .section-tikets{
+        div{
+            ul{
+                
+                a{
+                    background-color: #21bbb300;
+                    border: none;
+                    font-size: 2.5rem;
+                    &:hover{
+                            padding: 1rem;
+                            background-color: #21bbb3;
+                            border-radius: 3rem;
+                        }
+                }
+                
+            }
+        }
+    }
+
+    .section-videos{
+        div{
+            height: auto;
+            @include grid(repeat(2,1fr), repeat(2,1fr), none, none, none, none, ("vid-1 vid-2" "vid-3 vid-4"));
+            @include gap(none, 6rem, 10rem);
+            padding-left: 10rem;
+            padding-right: 10rem;
+            padding-bottom: 8rem;
+        }
+    }
+
+    .card{
+        width: 17.5rem;
+        height: 25rem;
+        img{
+            width: 13rem;
+        }
+        div{
+            a{
+                img{
+                    width: 3rem;
+                    padding-left: 0%;
+                }
+            }
+        }
+    }
+}

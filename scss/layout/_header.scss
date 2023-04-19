@@ -1,0 +1,22 @@
+header{
+    background-color: $background-principal;
+    width: 100%;
+    height: auto;
+    @include flex(row, wrap, center, center, center);
+    nav{
+        ul{
+            @include flex(none, none, none, none, none);
+            list-style: none;
+            @include gap(none, none, 1rem);
+            padding: 0%;
+            li{
+                a{
+                    text-decoration: none;
+                    color: $color-letter;
+                    font-family: $font-principal;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

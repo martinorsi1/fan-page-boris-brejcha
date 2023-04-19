@@ -1,0 +1,41 @@
+@mixin flex($direction, $wrap, $jsutify, $align, $align-c){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $jsutify;
+    align-items: $align;
+    align-self: $align-c;
+}
+
+@mixin gap($gap, $r-gap, $c-gap){
+    gap: $gap;
+    row-gap: $r-gap;
+    column-gap: $c-gap;
+}
+
+@mixin grid($cols, $rows, $justify-c, $align-c, $justify-i, $align-i, $area){
+    display: grid;
+    grid-template-columns: $cols;
+    grid-template-rows: $rows;
+    justify-content: $justify-c;
+    align-content: $align-c; 
+    justify-items: $justify-i;
+    align-items: $align-i;
+    grid-template-areas: $area;
+}
+
+@mixin grid-order($cs, $cn, $rs, $rn){
+    grid-column-start: $cs;
+    grid-column-end: $cn;
+    grid-row-start: $rs;
+    grid-row-end: $rn;
+}
+
+@mixin titulos(){
+    font-size: 4rem;
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: $font-principal;
+    text-align: center;
+}

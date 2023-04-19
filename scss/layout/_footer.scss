@@ -1,0 +1,23 @@
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: $background-principal;
+    @include flex(row, wrap, center, center, none);
+    div{
+        h3{
+            font-size: 1.6rem;
+            font-family: $font-principal;
+            font-weight: lighter;
+            color: $color-letter;
+            padding-right: 2rem
+        }    
+    }
+    .iconos{
+        ul{
+            @include flex(none, none, none, none, none);
+            list-style: none;
+            @include gap(none, none, 2rem);
+        }
+    
+    }
+}

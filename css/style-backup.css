@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* color 
+#000000 #17598D #0A355D  #104F4C*/
+/* tipogragia
+font-family: 'Poppins', sans-serif;
+ */
+
+
+/* ..................................................HEADER............................................... */
+
+header {
+    background-color: black;
+}
+
+.conteiner-header {
+    width: 100%;
+    height: 7.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteiner-header div img {
+    margin-left: 1rem;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    column-gap: 5rem;
+    margin-right: 3rem;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+
+/* ..................................................MAIN................................................... */
+
+main {
+    background: conic-gradient(at 0% 20%, #061f37 5%, #000000 30%, #0A355D 50%);
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 5rem;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* ......................BIOGRAFIA....................... */
+
+.section-bio {
+    width: 100%;
+    height: 85rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 15rem 70rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.titulo-bio {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.pabio {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 60rem;
+    font-size: 2rem;
+    color: white;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+.img-bio {
+    width: 60rem;
+    height: 60rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+
+/*........................ EVENTOS....................... */
+
+.conteiner-tikets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+}
+
+.conteiner-tikets ul {
+    text-align: center;
+    padding: 3rem;
+    margin: 2rem;
+    border: solid 0.3rem #1d8b85;
+    width: 55rem;
+    height: 13rem;
+}
+
+.conteiner-tikets a {
+    text-decoration: none;
+    color: white;
+    border-radius: 1rem;
+    border: solid 0.3rem #1d8b85;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+
+.titulotikets {
+    color: white;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+/*...........................GALERIA........................ */
+
+.galeria-img {
+    width: 100%;
+    height: 60rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "img-1 img-2 img-3 img-4 img-5 img-6"
+        "img-7 img-8 img-9 img-10 img-11 img-12";
+    gap: 2rem;
+    row-gap: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 5rem;
+}
+
+.img-1 {
+    grid-area: img-1;
+}
+
+.img-2 {
+    grid-area: img-2;
+}
+
+.img-3 {
+    grid-area: img-3;
+}
+
+.img-4 {
+    grid-area: img-4;
+}
+
+.img-5 {
+    grid-area: img-5;
+}
+
+.img-6 {
+    grid-area: img-6;
+}
+
+.img-7 {
+    grid-area: img-7;
+}
+
+.img-8 {
+    grid-area: img-8;
+}
+
+.img-9 {
+    grid-area: img-9;
+}
+
+.img-10 {
+    grid-area: img-10;
+}
+
+.img-11 {
+    grid-area: img-11;
+}
+
+.img-12 {
+    grid-area: img-12;
+}
+
+.galeria-img img {
+    width: 100%;
+}
+
+
+.galeria-vid {
+    width: 100%;
+    height: 80rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "vid-1 vid-2"
+        "vid-3 vid-4";
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 5rem;
+}
+
+.vid-1 {
+    grid-area: vid-1;
+}
+
+.vid-2 {
+    grid-area: vid-2;
+}
+
+.vid-3 {
+    grid-area: vid-3;
+}
+
+.vid-4 {
+    grid-area: vid-4;
+}
+
+.galeria-vid iframe {
+    width: 100%;
+}
+
+.subgaleria {
+    font-size: 5rem;
+    color: white;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.imggaleria img {
+    width: 16%;
+}
+
+.vidgaleria iframe {
+    width: 33%;
+}
+
+/*.......................... CONTACTO........................ */
+
+
+.main-c {
+    width: 100%;
+    height: 70rem;
+}
+
+form {
+    padding-bottom: 5rem;
+}
+
+.titulo-con {
+    color: white;
+    font-size: 5rem;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.conteiner-tikets label {
+    border-radius: 1rem;
+    border: solid 0.3rem #1d8b85;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit {
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    background-color: #1d8b85;
+    border: solid none;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/*........................... MUSICA ..........................*/
+
+.conteiner-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    width: 100%;
+    height: 80rem;
+}
+
+.card {
+    width: 24.5rem;
+    height: 32rem;
+    background-color: rgba(52, 52, 52, 0.648);
+    padding: 2rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    border: solid 0.3rem #1d8b85;
+    /* box-shadow: 5px 5px 5px white; */
+}
+
+.card div h3 {
+    font-size: 1.6rem;
+    font-variant: small-caps;
+    color: white;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card div a {
+    padding-top: 2.5rem;
+    padding-left: 3rem;
+}
+
+.cardimg {
+    width: 20rem;
+    height: 20rem;
+}
+
+.cardt {
+    display: flex;
+    flex-direction: row;
+    text-align: justify left;
+    margin-top: 0.5rem;
+}
+
+
+
+/* .....................................................FOOTER............................................... */
+
+footer {
+    width: 100%;
+    height: 7.4rem;
+    background-color: black;
+    color: white;
+}
+
+.conteiner-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteiner-footer div h3 {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+}
+
+.iconosredes {
+    display: flex;
+    list-style: none;
+    column-gap: 3rem;
+    margin-right: 3rem;
+}
+
+/*..............................................MEDIA MAX-WIDTH 1024PX ..........................................*/
+
+
+/* BIOGRAFIA */
+
+@media(max-width: 1024px) {
+    .section-bio {
+        width: 100%;
+        height: 75rem;
+        grid-template-rows: 15rem 55rem;
+    }
+
+    .pabio {
+        width: 45rem;
+        font-size: 1.6rem;
+    }
+
+    .img-bio {
+        width: 46rem;
+        height: 46rem;
+    }
+}
+
+
+/* GALERIA */
+
+@media(max-width: 1024px) {
+    .galeria-img {
+        height: 40rem;
+    }
+}
+
+
+/*..............................................MEDIA MAX-WIDTH 768PX ..........................................*/
+
+
+/* BIOGRAFIA */
+
+@media(max-width: 768px) {
+    .section-bio {
+        width: 100%;
+        height: 160rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15rem 1fr 1fr;
+    }
+
+    .pabio {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 60rem;
+        font-size: 2rem;
+        color: white;
+        text-align: justify;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .img-bio {
+        width: 60rem;
+        height: 60rem;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+
+
+
+/* GALERIA */
+
+@media(max-width: 768px) {
+    .galeria-img {
+        width: 100%;
+        height: 130rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "img-1 img-2 img-3"
+            "img-4 img-5 img-6"
+            "img-7 img-8 img-9"
+            "img-10 img-11 img-12";
+    }
+}
+
+
+/*..............................................MEDIA MAX-WIDTH 425PX ..........................................*/
+
+
+/* BARRA DE NAVEGACION */
+
+@media(max-width: 425px) {
+    .conteiner-header {
+        height: 14.8rem;
+        justify-content: center;
+        align-content: space-evenly;
+    }
+
+    .navbar {
+        column-gap: 2rem;
+        margin-right: 0;
+    }
+
+    .navbar li a {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+/* BIOGRAFIA */
+
+@media(max-width: 425px) {
+    .section-bio {
+        width: 100%;
+        height: 125rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15rem 1fr 1fr;
+        row-gap: 5rem;
+    }
+    .pabio {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 35rem;
+        font-size: 1.6rem;
+        color: white;
+        text-align: justify;
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 5rem;
+    }
+
+    .img-bio {
+        width: 35rem;
+        height: 35rem;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+
+
+/* GALERIA */
+
+@media(max-width: 425px) {
+    .galeria-img {
+        width: 100%;
+        height: 635rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas:
+            "img-1"
+            "img-2"
+            "img-3"
+            "img-4"
+            "img-5"
+            "img-6"
+            "img-7"
+            "img-8"
+            "img-9"
+            "img-10"
+            "img-11"
+            "img-12"
+        ;
+    }
+
+    .galeria-vid {
+        width: 100%;
+        height: 160rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "vid-1"
+            "vid-2"
+            "vid-3"
+            "vid-4";
+    }
+}
+
+/* FOOTER */
+
+@media(max-width: 425px) {
+    .conteiner-footer {
+        flex-direction: column-reverse;
+        height: 9rem;
+
+    }
+
+    .conteiner-footer div h3 {
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .iconosredes {
+        margin: 0;
+        margin-top: 2rem;
+    }
+}
+
+
+/*..............................................MEDIA MAX-WIDTH 375PX ..........................................*/
+
+
+/* BARRA DE NAVEGACION */
+
+@media(max-width: 375px) {
+    .conteiner-header {
+        height: 14.8rem;
+        justify-content: center;
+        align-content: space-evenly;
+    }
+
+    .navbar {
+        column-gap: 1rem;
+        margin-right: 0;
+    }
+
+    .navbar li a {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+/* BIOGRAFIA */
+
+@media(max-width: 375px) {
+    .section-bio {
+        width: 100%;
+        height: 135rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15rem 1fr 1fr;
+        row-gap: 5rem;
+    }
+    .pabio {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 30rem;
+        font-size: 1.6rem;
+        color: white;
+        text-align: justify;
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 5rem;
+    }
+
+    .img-bio {
+        width: 30rem;
+        height: 30rem;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+
+
+
+/* GALERIA */
+
+@media(max-width: 375px) {
+    .galeria-img {
+        width: 100%;
+        height: 560rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas:
+            "img-1"
+            "img-2"
+            "img-3"
+            "img-4"
+            "img-5"
+            "img-6"
+            "img-7"
+            "img-8"
+            "img-9"
+            "img-10"
+            "img-11"
+            "img-12"
+        ;
+    }
+}
+
+/* FOOTER */
+
+@media(max-width: 375px) {
+    .conteiner-footer {
+        flex-direction: column-reverse;
+        height: 9rem;
+
+    }
+
+    .conteiner-footer div h3 {
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .iconosredes {
+        margin: 0;
+        margin-top: 2rem;
+    }
+}
+
+
+/*..............................................MEDIA MAX-WIDTH 320PX ..........................................*/
+
+
+/* BARRA DE NAVEGACION */
+
+@media(max-width: 320px) {
+    .conteiner-header {
+        height: 14.8rem;
+        justify-content: center;
+        align-content: space-evenly;
+    }
+
+    .navbar {
+        column-gap: 1rem;
+        margin-right: 0;
+    }
+
+    .navbar li a {
+        font-size: 1.4rem;
+    }
+
+}
+
+
+/* BIOGRAFIA */
+
+@media(max-width: 320px) {
+    .section-bio {
+        width: 100%;
+        height: 145rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15rem 1fr 1fr;
+        row-gap: 5rem;
+    }
+    .pabio {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 25rem;
+        font-size: 1.6rem;
+        color: white;
+        text-align: justify;
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 5rem;
+    }
+
+    .img-bio {
+        width: 25rem;
+        height: 25rem;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+
+
+
+/* GALERIA */
+
+@media(max-width: 320px) {
+    .galeria-img {
+        width: 100%;
+        height: 480rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas:
+            "img-1"
+            "img-2"
+            "img-3"
+            "img-4"
+            "img-5"
+            "img-6"
+            "img-7"
+            "img-8"
+            "img-9"
+            "img-10"
+            "img-11"
+            "img-12"
+        ;
+    }
+}
+
+
+/* FOOTER */
+
+@media(max-width: 320px) {
+    .conteiner-footer {
+        flex-direction: column-reverse;
+        height: 9rem;
+
+    }
+
+    .conteiner-footer div h3 {
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .iconosredes {
+        margin: 0;
+        margin-top: 2rem;
+    }
+}
