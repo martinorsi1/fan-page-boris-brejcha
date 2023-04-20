@@ -22,6 +22,7 @@
     }
 
     .main-index {
+        height: 70rem;
         section {
             @include grid(repeat(2, 1fr), 15rem 1fr, none, none, center, center, none);
 
@@ -100,5 +101,8 @@
                 }
             }
         }
+    }
+    .main-contacto{
+        height: 80rem;
     }
 }

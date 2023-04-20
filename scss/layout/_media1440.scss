@@ -1,5 +1,6 @@
 @media (min-width: 1440px){
     .main-index{
+        height: 90rem;
         section{
             p{
                 width: 60rem;
@@ -29,5 +30,9 @@
                 }
             }
         }
+    }
+
+    .main-contacto{
+        height: 90rem;
     }
 }
