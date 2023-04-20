@@ -1,4 +1,16 @@
 @media (min-width: 1440px){
+    .main-index{
+        section{
+            p{
+                width: 60rem;
+                font-size: 2rem;
+            }
+            img{
+                width: 60rem;
+            }
+        }
+    }
+
     .card{
         width: 25.5rem;
         height: 35rem;
