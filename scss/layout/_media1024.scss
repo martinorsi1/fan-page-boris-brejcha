@@ -86,14 +86,17 @@
     }
 
     .card {
-        width: 18.5rem;
-        height: 26rem;
+        width: 16.5rem;
+        height: 23rem;
 
         img {
-            width: 14rem;
+            width: 12rem;
         }
 
         div {
+            h3{
+                font-variant: small-caps;
+            }
             a {
                 img {
                     width: 3rem;
@@ -102,6 +105,12 @@
             }
         }
     }
+
+    .card:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
     .main-contacto{
         height: 80rem;
     }

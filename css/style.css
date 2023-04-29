@@ -276,7 +276,7 @@ main {
   flex-direction: row;
   flex-wrap: none;
   justify-content: none;
-  align-items: none;
+  align-items: center;
   align-self: none;
   text-align: justify left;
   margin-top: 0.5rem;
@@ -291,11 +291,7 @@ main {
   width: 4rem;
   padding-top: 2.5rem;
   padding-left: 1rem;
-}
-
-.card:hover {
-  transform: scale(1.2);
-  transition: 0.5s;
+  margin-bottom: 2rem;
 }
 
 footer {
@@ -565,15 +561,22 @@ footer .iconos ul {
     padding-top: 3rem;
   }
   .card {
-    width: 18.5rem;
-    height: 26rem;
+    width: 16.5rem;
+    height: 23rem;
   }
   .card img {
-    width: 14rem;
+    width: 12rem;
+  }
+  .card div h3 {
+    font-variant: small-caps;
   }
   .card div a img {
     width: 3rem;
     padding-left: 0.5rem;
+  }
+  .card:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
   }
   .main-contacto {
     height: 80rem;
@@ -591,14 +594,16 @@ footer .iconos ul {
     width: 60rem;
   }
   .card {
-    width: 25.5rem;
-    height: 35rem;
+    width: 24rem;
+    height: 34rem;
+    padding: 2rem;
   }
   .card img {
-    width: 21rem;
+    width: 19.5rem;
     margin-bottom: 2rem;
   }
   .card div h3 {
+    font-variant: normal;
     font-size: 1.6rem;
   }
   .card div a img {

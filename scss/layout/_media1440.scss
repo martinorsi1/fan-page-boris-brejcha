@@ -13,14 +13,16 @@
     }
 
     .card{
-        width: 25.5rem;
-        height: 35rem;
+        width: 24rem;
+        height: 34rem;
+        padding: 2rem;
         img{
-            width: 21rem;
+            width: 19.5rem;
             margin-bottom: 2rem;
         }
         div{
             h3{
+                font-variant: normal;
                 font-size: 1.6rem;
             }
             a{
