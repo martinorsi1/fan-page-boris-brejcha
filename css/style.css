@@ -105,6 +105,15 @@ main {
   border: solid 0.3rem #21bbb3;
   margin: 4rem;
 }
+.main-contacto form .fieldset .contacto textarea {
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 1rem;
+  background: none;
+  border: none;
+}
 .main-contacto form .fieldset .contacto label {
   color: white;
   font-size: 1.6rem;
@@ -127,6 +136,7 @@ main {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   color: white;
+  text-transform: uppercase;
   padding: 1rem;
   margin: 4rem;
   background-color: #21bbb3;
@@ -528,13 +538,11 @@ footer .iconos ul {
     grid-row-end: 3;
   }
   .section-tikets div ul a {
-    background-color: rgba(33, 187, 179, 0);
-    border: none;
-    font-size: 2.5rem;
+    padding: 1rem;
   }
   .section-tikets div ul a:hover {
-    padding: 1rem;
-    background-color: #21bbb3;
+    background-color: #0f477c;
+    border: solid 0.3rem #0f477c;
     border-radius: 3rem;
   }
   .section-videos div {
@@ -579,7 +587,12 @@ footer .iconos ul {
     transition: 0.5s;
   }
   .main-contacto {
-    height: 80rem;
+    height: 90rem;
+  }
+  .submit:hover {
+    background-color: #0f477c;
+    border: solid 0.3rem #0f477c;
+    border-radius: 3rem;
   }
 }
 @media (min-width: 1440px) {
