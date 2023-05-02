@@ -9,8 +9,9 @@
                                 margin: 1rem;
 
                                 &:hover {
-                                    background-color: rgba(128, 128, 128, 0.203);
+                                    background-color: #0f477c;
                                     border-radius: 3rem;
+                                    color: white;
                                 }
                             }
                         }
@@ -19,6 +20,15 @@
             }
 
         }
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+        justify-content: space-between
+    }
+
+    .nav-link {
+        transition: 0s;
     }
 
     .main-index {
@@ -41,11 +51,7 @@
                 width: 45rem;
                 @include grid-order(2, 3, 2, 3);
             }
-
-            ;
         }
-
-
     }
 
     .section-tikets {
@@ -119,5 +125,23 @@
         background-color: #0f477c;
         border: solid 0.3rem #0f477c;
         border-radius: 3rem;
+    }
+
+    .main-404 {
+        h1 {
+            font-size: 20rem;
+        }
+
+        img {
+            width: 20rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
     }
 }

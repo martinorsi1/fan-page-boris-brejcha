@@ -62,7 +62,7 @@ main {
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 5rem;
 }
 .main-index section img {
@@ -304,6 +304,36 @@ main {
   margin-bottom: 2rem;
 }
 
+.main-404 {
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: center;
+  align-self: none;
+}
+.main-404 h1, .main-404 h2, .main-404 h3 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.main-404 h1 {
+  font-size: 10rem;
+}
+.main-404 img {
+  width: 10rem;
+}
+.main-404 h2 {
+  font-size: 2rem;
+}
+.main-404 h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 footer {
   width: 100%;
   height: 7rem;
@@ -321,6 +351,7 @@ footer div h3 {
   font-weight: lighter;
   color: white;
   padding-right: 2rem;
+  margin: 0%;
 }
 footer .iconos ul {
   display: flex;
@@ -333,6 +364,7 @@ footer .iconos ul {
   gap: none;
   row-gap: none;
   column-gap: 2rem;
+  margin: 0%;
 }
 
 @media (min-width: 375px) {
@@ -435,6 +467,19 @@ footer .iconos ul {
   .main-contacto form .fieldset fieldset legend {
     font-size: 5rem;
   }
+  .main-404 h1 {
+    font-size: 12rem;
+    margin-bottom: 2rem;
+  }
+  .main-404 img {
+    width: 12rem;
+  }
+  .main-404 h2 {
+    font-size: 3rem;
+  }
+  .main-404 h3 {
+    font-size: 2rem;
+  }
 }
 @media (min-width: 768px) {
   .main-index section {
@@ -483,6 +528,18 @@ footer .iconos ul {
     padding-top: 2.5rem;
     padding-left: 1rem;
   }
+  .main-404 h1 {
+    font-size: 15rem;
+  }
+  .main-404 img {
+    width: 17rem;
+  }
+  .main-404 h2 {
+    font-size: 3rem;
+  }
+  .main-404 h3 {
+    font-size: 2rem;
+  }
   footer {
     display: flex;
     flex-direction: row;
@@ -503,8 +560,16 @@ footer .iconos ul {
     margin: 1rem;
   }
   header nav .container-fluid div ul li a:hover {
-    background-color: rgba(128, 128, 128, 0.203);
+    background-color: #0f477c;
     border-radius: 3rem;
+    color: white;
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+    justify-content: space-between;
+  }
+  .nav-link {
+    transition: 0s;
   }
   .main-index {
     height: 70rem;
@@ -596,6 +661,18 @@ footer .iconos ul {
     background-color: #0f477c;
     border: solid 0.3rem #0f477c;
     border-radius: 3rem;
+  }
+  .main-404 h1 {
+    font-size: 20rem;
+  }
+  .main-404 img {
+    width: 20rem;
+  }
+  .main-404 h2 {
+    font-size: 3rem;
+  }
+  .main-404 h3 {
+    font-size: 2rem;
   }
 }
 @media (min-width: 1440px) {

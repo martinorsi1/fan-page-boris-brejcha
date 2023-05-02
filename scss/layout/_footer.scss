@@ -9,7 +9,8 @@ footer{
             font-family: $font-principal;
             font-weight: lighter;
             color: $color-letter;
-            padding-right: 2rem
+            padding-right: 2rem;
+            margin: 0%
         }    
     }
     .iconos{
@@ -17,6 +18,7 @@ footer{
             @include flex(none, none, none, none, none);
             list-style: none;
             @include gap(none, none, 2rem);
+            margin: 0%;
         }
     
     }

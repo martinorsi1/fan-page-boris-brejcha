@@ -38,27 +38,50 @@
             width: 16rem;
             margin: 0%;
         }
-        div{
+
+        div {
             margin-top: 0.5rem;
-            h3{
+
+            h3 {
                 font-size: 1.4rem;
             }
-            a{
-            img{
-                width: 4rem;
-                padding-top: 2.5rem;
-                padding-left: 1rem;
+
+            a {
+                img {
+                    width: 4rem;
+                    padding-top: 2.5rem;
+                    padding-left: 1rem;
+                }
             }
-        }
         }
     }
 
-    footer{
+    .main-404 {
+        h1 {
+            font-size: 15rem;
+        }
+
+        img {
+            width: 17rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+    }
+
+    footer {
         @include flex(row, wrap, space-between, center, none);
-        div{
+
+        div {
             margin-left: 3rem;
         }
-        .iconos{
+
+        .iconos {
             margin-right: 3rem;
         }
     }
