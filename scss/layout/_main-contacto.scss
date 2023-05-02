@@ -9,44 +9,47 @@
             height: 100%;
             @include flex(column, none, none, center, none);
 
-            legend {
-                @include titulos();
-                padding-left: 5rem;
-                padding-right: 5rem;
-            }
-
-            .contacto {
-                text-align: center;
-                border-radius: 1rem;
-                border: solid 0.3rem #21bbb3;
-                margin: 4rem;
-
-                textarea {
-                    width: 100%;
-                    font-size: 1.6rem;
-                    font-family: $font-principal;
-                    color: white;
-                    padding: 1rem;
-                    background: none;
-                    border: none;
+            fieldset {
+                legend {
+                    @include titulos();
+                    padding-left: 5rem;
+                    padding-right: 5rem;
                 }
 
-                label {
-                    color: white;
-                    font-size: 1.6rem;
-                    font-family: $font-principal;
-                    padding: 1rem;
+                .contacto {
+                    text-align: center;
+                    border-radius: 1rem;
+                    border: solid 0.3rem #21bbb3;
+                    margin: 4rem;
 
-                    input {
+                    textarea {
+                        width: 100%;
                         font-size: 1.6rem;
                         font-family: $font-principal;
-                        padding: 0.5rem;
                         color: white;
+                        padding: 1rem;
                         background: none;
                         border: none;
                     }
+
+                    label {
+                        color: white;
+                        font-size: 1.6rem;
+                        font-family: $font-principal;
+                        padding: 1rem;
+
+                        input {
+                            font-size: 1.6rem;
+                            font-family: $font-principal;
+                            padding: 0.5rem;
+                            color: white;
+                            background: none;
+                            border: none;
+                        }
+                    }
                 }
             }
+
         }
 
     }

@@ -89,7 +89,7 @@ main {
   align-items: center;
   align-self: none;
 }
-.main-contacto form .fieldset legend {
+.main-contacto form .fieldset fieldset legend {
   font-size: 4rem;
   color: white;
   padding-top: 3rem;
@@ -99,13 +99,13 @@ main {
   padding-left: 5rem;
   padding-right: 5rem;
 }
-.main-contacto form .fieldset .contacto {
+.main-contacto form .fieldset fieldset .contacto {
   text-align: center;
   border-radius: 1rem;
   border: solid 0.3rem #21bbb3;
   margin: 4rem;
 }
-.main-contacto form .fieldset .contacto textarea {
+.main-contacto form .fieldset fieldset .contacto textarea {
   width: 100%;
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
@@ -114,13 +114,13 @@ main {
   background: none;
   border: none;
 }
-.main-contacto form .fieldset .contacto label {
+.main-contacto form .fieldset fieldset .contacto label {
   color: white;
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   padding: 1rem;
 }
-.main-contacto form .fieldset .contacto label input {
+.main-contacto form .fieldset fieldset .contacto label input {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   padding: 0.5rem;
@@ -431,6 +431,9 @@ footer .iconos ul {
     width: 5.5rem;
     padding-top: 1rem;
     padding-left: 2rem;
+  }
+  .main-contacto form .fieldset fieldset legend {
+    font-size: 5rem;
   }
 }
 @media (min-width: 768px) {
