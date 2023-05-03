@@ -314,7 +314,9 @@ main {
   align-items: center;
   align-self: none;
 }
-.main-404 h1, .main-404 h2, .main-404 h3 {
+.main-404 h1,
+.main-404 h2,
+.main-404 h3 {
   color: black;
   font-family: "Poppins", sans-serif;
   margin-top: 5rem;

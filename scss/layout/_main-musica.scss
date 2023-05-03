@@ -1,8 +1,9 @@
-.main-musica{
-    h1{
+.main-musica {
+    h1 {
         @include titulos();
     }
-    section{
+
+    section {
         width: 100%;
         height: auto;
         @include flex(row, wrap, space-evenly, none, space-evenly);
@@ -10,28 +11,33 @@
         padding-bottom: 5rem;
     }
 }
-.card{
+
+.card {
     width: 20.5rem;
     height: 28rem;
     background-color: rgba(0, 0, 0, 0.468);
     padding: 2rem;
     border-radius: 1.5rem;
     border: solid 0.3rem #21bbb3;
-    img{
+
+    img {
         width: 16rem;
     }
-    div{
+
+    div {
         @include flex(row, none, none, center, none);
         text-align: justify left;
         margin-top: 0.5rem;
-        h3{
+
+        h3 {
             font-family: $font-principal;
             font-size: 1.4rem;
             color: white;
             font-weight: lighter;
         }
-        a{
-            img{
+
+        a {
+            img {
                 width: 4rem;
                 padding-top: 2.5rem;
                 padding-left: 1rem;

@@ -1,32 +1,37 @@
-@media (min-width: 1440px){
-    .main-index{
+@media (min-width: 1440px) {
+    .main-index {
         height: 90rem;
-        section{
-            p{
+
+        section {
+            p {
                 width: 60rem;
                 font-size: 2rem;
             }
-            img{
+
+            img {
                 width: 60rem;
             }
         }
     }
 
-    .card{
+    .card {
         width: 24rem;
         height: 34rem;
         padding: 2rem;
-        img{
+
+        img {
             width: 19.5rem;
             margin-bottom: 2rem;
         }
-        div{
-            h3{
+
+        div {
+            h3 {
                 font-variant: normal;
                 font-size: 1.6rem;
             }
-            a{
-                img{
+
+            a {
+                img {
                     width: 4rem;
                     padding-top: 2rem;
                 }
@@ -34,7 +39,7 @@
         }
     }
 
-    .main-contacto{
+    .main-contacto {
         height: 90rem;
     }
 }

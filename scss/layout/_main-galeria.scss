@@ -1,37 +1,44 @@
-.main-galeria{
-    section{
-        h1{
+.main-galeria {
+    section {
+        h1 {
             @include titulos();
         }
     }
 }
-.section-videos{
-    h2{
+
+.section-videos {
+    h2 {
         @include titulos();
     }
-    div{
+
+    div {
         width: 100%;
         height: auto;
-        @include grid(repeat(1,1fr), repeat(4,1fr), none, none, none, none, ("vid-1" "vid-2" "vid-3" "vid-4"));
+        @include grid(repeat(1, 1fr), repeat(4, 1fr), none, none, none, none, ("vid-1" "vid-2" "vid-3" "vid-4"));
         @include gap(2rem, none, none);
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 5rem;
         margin-top: 5rem;
-        iframe{
+
+        iframe {
             width: 100%;
         }
     }
 }
+
 .vid-1 {
     grid-area: vid-1;
 }
+
 .vid-2 {
     grid-area: vid-2;
 }
+
 .vid-3 {
     grid-area: vid-3;
 }
+
 .vid-4 {
     grid-area: vid-4;
 }

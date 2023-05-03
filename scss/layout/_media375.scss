@@ -1,9 +1,9 @@
-@media(min-width: 375px){
-    header{
-        nav{
-            ul{
-                li{
-                    a{
+@media(min-width: 375px) {
+    header {
+        nav {
+            ul {
+                li {
+                    a {
                         font-size: 1.6rem;
                     }
                 }
@@ -11,27 +11,31 @@
         }
     }
 
-    .main-index{
-        section{
-            @include grid(repeat(1,1fr), 15rem 30rem 1fr, none, none, center, center, none);
-            p{
+    .main-index {
+        section {
+            @include grid(repeat(1, 1fr), 15rem 30rem 1fr, none, none, center, center, none);
+
+            p {
                 width: 30rem;
             }
-            img{
+
+            img {
                 width: 30rem;
             }
         }
     }
 
-    .section-tikets{
-        div{
-            ul{
+    .section-tikets {
+        div {
+            ul {
                 width: 34rem;
                 height: 13.5rem;
-                li{
+
+                li {
                     font-size: 1.6rem;
                 }
-                a{
+
+                a {
                     font-size: 2rem;
                     margin: 1rem;
                 }
@@ -39,19 +43,22 @@
         }
     }
 
-    .card{
+    .card {
         width: 25.5rem;
         height: 35rem;
-        img{
+
+        img {
             width: 21rem;
             margin-bottom: 2rem;
         }
-        div{
-            h3{
+
+        div {
+            h3 {
                 font-size: 1.6rem;
             }
-            a{
-                img{
+
+            a {
+                img {
                     width: 4rem;
                     padding-top: 2rem;
                 }
